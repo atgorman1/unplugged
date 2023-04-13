@@ -22,13 +22,14 @@
   </head>
 
   <body>
-
     <!--CODE SHELL -->
-    
-    <header>
-      <section class="flex-container">
-        <div class="logo"><a href=""><img src="" alt="Unplugged Logo"></div>
 
+    <header>
+      <section class="content-wrapper">
+        <a href="#">
+          <img src="" alt="Unplugged Logo" />
+        </a>
+        <div class="header-divider"></div>
         <nav>
           <ul>
             <li><a href="faq\index.html">FAQ</a></li>
@@ -39,42 +40,72 @@
     </header>
 
     <main>
-      <section class="flex-container">
-        <section class="hero-image">
+      <section class="hero-area">
+        <div class="content-wrapper">
           <h1>Retreat from the desk, return refreshed.</h1>
-        </section>
-        <aside class="newsletter">
-          <h3>Whaant to join the next retreat?</h3>
-          <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
-          <h3>Find out more</h3>
-          <input type="text" name="name" value="email address">
-          <input type="button" value="Download Itinerary">
-        </aside>
-        <section class="features"></section>
-        <section class="reviews"></section>
+        </div>
       </section>
+
+      <aside>
+        <div class="content-wrapper">
+          <div class="form-description">
+            <h3>Want to join the next retreat?</h3>
+            <p>
+              Find out when we are holding our next retreat and how your company
+              or team can sign up!
+            </p>
+          </div>
+          <div class="form">
+            <h3>Find out more</h3>
+            <input type="text" name="name" value="email address" />
+            <input type="button" value="Download Itinerary" />
+          </div>
+        </div>
+      </aside>
+
+      <section class="features"></section>
+      <section class="reviews"></section>
     </main>
 
-    
     <footer>
-      <section class="flex-container">
-        <div class="contact">
-          <address>
+      <div class="content-wrapper">
+        <div class="footer-content">
+          <div class="contact">
             <h4>Contact</h4>
-            <div class="phone-number">555-555-5555</div>
-            <div class="email">hello@unplugged.com</div>
-          </address>
+            <address>
+              <p>
+                555-555-5555 <br />
+                hello@unplugged.com
+              </p>
+            </address>
+          </div>
+          <div class="social">
+            <h4>Social</h4>
+            <p>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener"
+              ></a>
+            </p>
+            <p>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener"
+              ></a>
+            </p>
+            <p>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener"
+              ></a>
+            </p>
+          </div>
+          <div class="copyright">Copyright 202X | Unplugged</div>
         </div>
-        <div class="social">
-          <h4>Social</h4>
-          <p><a href="https://www.facebook.com" target="_blank" rel="noopener"></a></p>
-          <p><a href="https://www.twitter.com" target="_blank" rel="noopener"></a></p>
-          <p><a href="https://www.instagram.com" target="_blank" rel="noopener"></a></p>
-        </div>
-        <div class="copyright">
-          Copyright 202X | Unplugged
-        </div>
-      </section>
+      </div>
     </footer>
 
     <!-- JavaScript -->
