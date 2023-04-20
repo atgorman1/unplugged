@@ -93,37 +93,70 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+}
+.content-wrapper {
+  width: 90%;
 }
 /* ------------------------- Base Header Styles ------------------------- */
+header {
+  width: 15px 0;
+}
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 65%;
 }
-
+header .header-divider {
+  width: 100%;
+  padding: 10px 0 20px 0;
+}
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
+  padding: 0;
 }
-
 header nav ul {
   display: flex;
   justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
+header nav ul li {
+  padding: 0 10%;
+}
 /* ------------------------- Footer Styles ------------------------- */
+footer {
+  margin: 50px 0;
+}
+footer .content-wrapper {
+  width: 55%;
+}
+footer p {
+  margin: 0;
+}
+footer h4 {
+  padding: 20px 0;
+}
 footer .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 50px 0;
 }
 footer .social p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer .copyright {
+  padding: 20px 0;
 }
 /* --------------------- Mobile Styles ------------------- */
 /* -------- Main Styles - homepage --------- */
@@ -131,29 +164,61 @@ footer .social p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 50px 0;
+}
+.hero-area h1 {
+  padding: 0;
 }
 aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 50px 0;
+}
+.form-description {
+  padding-bottom: 30px;
+}
+aside h3 {
+  padding: 20px 0;
+}
+aside input {
+  padding: 1em;
+  margin: 20px 0;
 }
 .features {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
-
+.features h2 {
+  margin: 0;
+  padding-bottom: 60px;
+}
 .feature-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 65%;
+  padding: 30px 0;
+}
+.features p {
+  margin: 0;
+}
+
+.feature-icon {
+  padding-bottom: 40px;
 }
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 50px 0;
 }
-
+.reviews h3 {
+  width: 90%;
+  padding-bottom: 40px;
+}
 /* ---------- Main Styles - About page ----------- */
 .mission {
   display: flex;
@@ -161,14 +226,12 @@ aside {
   justify-content: center;
   align-items: center;
 }
-
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-
 /* ------------ Main Styles - faq page ---------- */
 .faq {
   display: flex;
