@@ -154,6 +154,7 @@ footer {
 /* ----- Base Header Styles ----- */
 header {
   padding: 15px 0;
+  background: #202322;
 }
 header .content-wrapper {
   display: flex;
@@ -164,7 +165,9 @@ header .content-wrapper {
 }
 .header-divider {
   width: 100%;
-  padding: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
+  height: 2px;
+  background: #3a3a3a;
 }
 header nav {
   display: flex;
@@ -183,10 +186,13 @@ header nav ul {
 }
 header nav ul li {
   padding: 0 10%;
+  font-size: 1.125em;
+  font-weight: bold;
 }
 /* ----- Footer Styles ------ */
 footer {
   flex-direction: column;
+  background: #202322;
 }
 footer .content-wrapper {
   width: 55%;
@@ -216,15 +222,20 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/unplugged-retreat.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
 }
 
 aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #527158;
 }
 .form-description {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 aside h3 {
   padding: 20px 0;
@@ -237,6 +248,9 @@ aside input {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/unplugged-retreat-features.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .features h2 {
   margin: 0;
@@ -266,6 +280,7 @@ aside input {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #2a423a;
 }
 .reviews h2 {
   margin-bottom: 40px;
@@ -302,6 +317,31 @@ aside input {
   justify-content: center;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
