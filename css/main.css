@@ -150,12 +150,13 @@ footer {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+  background: #202322;
 }
 /* ----- Base Header Styles ----- */
 header {
   padding: 15px 0;
-  background: #202322;
 }
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -183,6 +184,7 @@ header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 header nav ul li {
   padding: 0 10%;
@@ -192,7 +194,7 @@ header nav ul li {
 /* ----- Footer Styles ------ */
 footer {
   flex-direction: column;
-  background: #202322;
+  text-align: center;
 }
 footer .content-wrapper {
   width: 55%;
@@ -228,15 +230,47 @@ footer .copyright {
   height: 500px;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+  font: "poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 aside {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
   background: #527158;
 }
-.form-description {
-  padding-bottom: 20px;
+
+aside .form {
+  margin-top: 30px;
 }
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 aside h3 {
   padding: 20px 0;
 }
@@ -244,6 +278,7 @@ aside input {
   padding: 1em;
   margin: 20px 0;
 }
+
 .features {
   display: flex;
   justify-content: center;
@@ -271,6 +306,7 @@ aside input {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .feature-icon {
@@ -284,6 +320,7 @@ aside input {
 }
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -317,31 +354,6 @@ aside input {
   justify-content: center;
 }
 
-aside .form {
-  margin-top: 30px;
-}
-
-input[type="text"] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type="button"] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
