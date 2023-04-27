@@ -322,6 +322,10 @@ aside input {
   text-align: center;
 }
 
+.features i {
+  font-size: 3.75em;
+}
+
 .feature-icon {
   padding-bottom: 40px;
 }
@@ -576,7 +580,7 @@ aside input {
     flex-basis: 50%;
   }
 
-  .features .features-item-description {
+  .features .feature-description {
     width: 62%;
   }
 
