@@ -172,13 +172,16 @@ header figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
+
 .header-divider {
   width: 100%;
   margin: 10px 0 20px 0;
   height: 2px;
   background: #3a3a3a;
 }
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -237,7 +240,7 @@ footer .copyright {
   background: url(../img/unplugged-retreat.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 500px;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -328,6 +331,7 @@ aside input {
   flex-flow: row wrap;
   background: #2a423a;
 }
+
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -335,7 +339,9 @@ aside input {
 
 .reviews h3 {
   margin: 20px 0;
+  width: 55%;
 }
+
 .reviews article figure {
   width: 100%;
   display: flex;
@@ -349,6 +355,21 @@ aside input {
   justify-content: center;
   align-items: center;
   background: #527158;
+}
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .contact-section {
   display: flex;
@@ -370,6 +391,20 @@ aside input {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 /* ==========================================================================
@@ -457,10 +492,6 @@ aside input {
 /***************************** Tablet Styles ********************************/
 @media only screen and (min-width: 768px) {
   /* ---- General Styles ---- */
-  h1 {
-    font-size: 3em;
-    line-height: 1;
-  }
 
   h2 {
     font-size: 2.25em;
@@ -475,11 +506,6 @@ aside input {
   footer h4,
   .contact h4 {
     font-size: 1.5em;
-  }
-
-  .faq h4,
-  .faq p {
-    line-height: 1.125em;
   }
 
   .content-wrapper {
@@ -500,9 +526,6 @@ aside input {
 
   header figure {
     width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   header nav {
@@ -517,6 +540,16 @@ aside input {
     display: none;
   }
   /* ---- Main Styles - Homepage ---- */
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
+
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -531,7 +564,7 @@ aside input {
     margin: 0;
   }
 
-  .features .content-wrapper h2 {
+  .features h2 {
     padding-bottom: 20px;
   }
 
@@ -544,7 +577,7 @@ aside input {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   .feature-icon {
@@ -554,6 +587,11 @@ aside input {
     display: flex;
     justify-content: space-between;
   }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
   .reviews article figure {
     width: 47%;
   }
@@ -563,33 +601,32 @@ aside input {
 
   /* ---- Footer ---- */
   footer .content-wrapper {
-    width: 85%;
+    width: 65%;
     margin: 100px 0;
   }
 
   .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
   }
 
   footer .contact {
     margin-bottom: 0;
-    width: 50%;
   }
 
   footer .social {
     margin-bottom: 0;
-    width: 50%;
   }
 
   footer .contact .h4 {
     padding-bottom: 40px;
+    font-size: 1.5em;
   }
 
   .copyright {
-    width: 33%;
+    width: 100%;
   }
 
   /* ------ Main Styles - faq page ------ */
@@ -601,6 +638,10 @@ aside input {
   }
   .faq h2 {
     width: 100%;
+  }
+  .faq h4,
+  .faq p {
+    line-height: 1.125em;
   }
   /* ----- Main Styles - about page ------ */
   .mission-content {
@@ -631,10 +672,6 @@ aside input {
     width: 960px;
   }
 
-  h1 {
-    font-size: 3.75em;
-  }
-
   h2 {
     font-size: 2.25em;
   }
@@ -649,10 +686,14 @@ aside input {
     line-height: 1.33;
   }
 
+  header {
+    padding: 15px 0;
+  }
+
   /* ---- Main Styles - Homepage ---- */
   .hero-area h1 {
-    width: 70%;
-    height: 600px;
+    width: 80%;
+    font-size: 3.75em;
   }
 
   aside .content-wrapper {
@@ -673,7 +714,7 @@ aside input {
   }
   .features article {
     width: 20%;
-    flex-basis: 30%;
+    flex-basis: 33%;
     margin: 0;
   }
 
@@ -697,13 +738,13 @@ aside input {
   line-height: 1;
 }
 /* ----- Main Styles - about page ------ */
-.mission h2 {
-  font-size: 3em;
-}
-
 .mission h2,
 .contact-section .content-wrapper h2 {
   width: 95%;
+}
+
+.contact-content h4 {
+  font-size: 1.875em;
 }
 /* ==========================================================================
    Print styles.
