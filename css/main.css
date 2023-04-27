@@ -376,7 +376,7 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #527158;
+  background: #2a423a;
 }
 /* ------ Main Styles - faq page ------ */
 .faq {
@@ -651,10 +651,13 @@ aside input {
     padding-top: 20px;
   }
 
-  mission-content p {
+  .mission-content p {
     width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 45.57%;
+  }
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -741,6 +744,11 @@ aside input {
 .mission h2,
 .contact-section .content-wrapper h2 {
   width: 95%;
+  font-size: 3em;
+}
+
+.map figure {
+  padding-bottom: 37.5%;
 }
 
 .contact-content h4 {
