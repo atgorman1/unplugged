@@ -217,11 +217,10 @@ footer p {
 footer h4 {
   padding: 20px 0;
 }
-footer .social {
+footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 0;
 }
 
 footer .social p {
@@ -229,6 +228,15 @@ footer .social p {
   justify-content: center;
   align-items: center;
 }
+
+footer .social-icons p {
+  background: #527158;
+  font-size: 1.3125em;
+  width: 21px;
+  padding: 6px 9px;
+  border-radius: 100%;
+}
+
 footer .copyright {
   padding: 20px 0;
 }
@@ -620,16 +628,16 @@ aside input {
     margin-bottom: 0;
   }
 
-  footer .social {
-    margin-bottom: 0;
-  }
-
   footer .contact .h4 {
     padding-bottom: 40px;
     font-size: 1.5em;
   }
+  footer .social {
+    width: 33%;
+  }
 
   .copyright {
+    margin: 20px 0;
     width: 100%;
   }
 
