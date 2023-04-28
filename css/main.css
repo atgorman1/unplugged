@@ -217,6 +217,10 @@ footer p {
 footer h4 {
   padding: 20px 0;
 }
+footer .contact {
+  padding-bottom: 50px;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -266,6 +270,9 @@ aside {
   background: #527158;
 }
 
+aside p {
+  margin: 0;
+}
 aside .form-description {
   margin-bottom: 30px;
 }
@@ -276,6 +283,7 @@ input[type="text"] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  margin-bottom: 20px;
 }
 
 input[type="button"] {
@@ -294,10 +302,6 @@ input[type="button"] {
 
 aside h3 {
   padding: 20px 0;
-}
-aside input {
-  padding: 1em;
-  margin: 20px 0;
 }
 
 .features {
@@ -345,7 +349,7 @@ aside input {
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   line-height: 1;
 }
 
@@ -369,7 +373,6 @@ aside input {
   background: #527158;
 }
 .map figure {
-  width: 100%;
   height: 0;
   padding-bottom: 125%;
   overflow: hidden;
@@ -409,6 +412,7 @@ aside input {
 .faq h2 {
   margin-bottom: 40px;
   line-height: 1;
+  font-size: 1.5em;
 }
 
 .faq-content {
@@ -599,7 +603,6 @@ aside input {
     display: flex;
     justify-content: space-between;
   }
-
   .reviews h2 {
     width: 85%;
   }
@@ -607,6 +610,11 @@ aside input {
   .reviews article figure {
     width: 47%;
   }
+
+  .reviews h3 {
+    width: 75%;
+  }
+
   .featured-review {
     width: 49%;
   }
@@ -628,8 +636,8 @@ aside input {
     margin-bottom: 0;
   }
 
-  footer .contact .h4 {
-    padding-bottom: 40px;
+  footer h4 {
+    padding: 0 0 40px 0;
     font-size: 1.5em;
   }
   footer .social {
@@ -740,31 +748,31 @@ aside input {
   .featured-review {
     width: 43%;
   }
-}
 
-/* ----- Main Styles - faq page ------ */
-.faq h2 {
-  width: 100%;
-  font-size: 3em;
-}
-.faq h4,
-.faq p {
-  font-size: 1.125em;
-  line-height: 1;
-}
-/* ----- Main Styles - about page ------ */
-.mission h2,
-.contact-section .content-wrapper h2 {
-  width: 95%;
-  font-size: 3em;
-}
+  /* ----- Main Styles - faq page ------ */
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
+  /* ----- Main Styles - about page ------ */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+    font-size: 3em;
+  }
 
-.map figure {
-  padding-bottom: 37.5%;
-}
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
-.contact-content h4 {
-  font-size: 1.875em;
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
 }
 /* ==========================================================================
    Print styles.
