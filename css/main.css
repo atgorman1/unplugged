@@ -536,10 +536,8 @@ aside h3 {
   }
 
   header .content-wrapper {
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-
   header figure {
     width: 30%;
   }
@@ -556,6 +554,11 @@ aside h3 {
     display: none;
   }
   /* ---- Main Styles - Homepage ---- */
+  header {
+    justify-content: space-around;
+    padding: 15px 0;
+  }
+
   .hero-area {
     min-height: 600px;
   }
